@@ -15,7 +15,7 @@ class ArticleControllerTest extends TestCase
         //ここでの$thisは、TestCaseクラスを継承したArticleControllerTestクラスを指します。
         $response = $this->get(route('articles.index'));
 
-        $response->assertStatus(400)->assertViewIs('articles.index');
+        $response->assertStatus(200)->assertViewIs('articles.index');
     }
 
     public function testGuestCreate(){
