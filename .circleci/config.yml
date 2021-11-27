@@ -78,6 +78,7 @@ jobs:
           #キャッシュを保存するパス
           paths:
             - node_modules
+      - run: npm run prod
       - run:
           name: archive artifacts
           command: zip -ryq laravel-ci.zip .
