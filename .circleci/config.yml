@@ -49,7 +49,6 @@ jobs:
       - run:
           name: php test
           command: vendor/bin/phpunit
-  #過去のdeploy利用されることはない
   deploy_old:
     docker:
       - image: circleci/php:7.3-node-browsers
